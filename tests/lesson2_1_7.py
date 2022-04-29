@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 import math
 
-def calc(x):
+def calculdateFn(x):
   return str(math.log(abs(12*math.sin(int(x)))))
 
 try:
@@ -12,7 +12,7 @@ try:
 
     treasure = browser.find_element_by_id("treasure")
     x_element = treasure.get_attribute("valuex")
-    y = calc(x_element)
+    y = calculdateFn(x_element)
 
     input = browser.find_element_by_id("answer")
     input.send_keys(y)
