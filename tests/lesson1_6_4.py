@@ -1,9 +1,8 @@
 from selenium import webdriver
 import time
 
-link = "http://suninjuly.github.io/simple_form_find_task.html"
 browser = webdriver.Chrome()
-browser.get(link)
+browser.get("http://suninjuly.github.io/simple_form_find_task.html")
 try:
     input1 = browser.find_element_by_tag_name("input")
     input1.send_keys("Ivan")
